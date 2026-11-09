@@ -37,6 +37,97 @@ The pipeline also incorporates a two-month vendor reporting delay, idempotent pr
 - Enable secure external data sharing through ADLS Gen2.
 - Implement centralized data governance using Unity Catalog.
 
+## 🎯 The Problem Solved & Business Impact
+
+### 1. The Business Problem
+
+#### Massive, Unstructured, and Delayed Data Inflow
+
+Raw NYC Yellow Taxi trip files continuously arrive in storage. Managing schema drift, vendor reporting delays, and inconsistent raw data manually creates significant data bottlenecks.
+
+The strict two-month reporting lag makes timely data availability and processing more challenging.
+
+#### Siloed and Inaccurate Historical Context
+
+Taxi zone changes, including borough and location mapping modifications, can break historical reporting when legacy databases fail to preserve previous dimension values.
+
+Without historical tracking, previously reported metrics may become inaccurate when location attributes change.
+
+#### Lack of Ready-to-Use Analytics
+
+Downstream executive teams and BI dashboards require clean, aggregated, and reliable datasets.
+
+Unoptimized raw data can lead to slow query performance, increased compute costs, and a lack of consistent business metrics.
+
+### 2. How the Pipeline Helps Business Decisions & Forecasting
+
+#### 📈 Dynamic Demand & Revenue Optimization
+
+Automated processing of daily trip summaries in the Gold Layer enables business stakeholders to visualize:
+
+- Peak travel hours.
+- High-demand pickup and dropoff zones.
+- Revenue trends across different locations.
+- Passenger volume trends.
+- Average fare and trip distance patterns.
+
+These insights support data-driven decisions regarding fleet allocation, operational efficiency, and revenue optimization.
+
+#### 🔮 Reliable Trend Forecasting
+
+Clean, partitioned, and historically consistent datasets provide a reliable foundation for data science teams to develop predictive models.
+
+Potential forecasting applications include:
+
+- Passenger demand spike prediction.
+- Demand forecasting by taxi zone and time of day.
+- Dynamic pricing and surcharge analysis.
+- Fleet deployment optimization.
+- Revenue forecasting.
+- Seasonal travel trend analysis.
+
+#### 🛡️ Complete Data Governance & Trust
+
+Unity Catalog provides centralized governance, access control, auditing, and data lineage.
+
+SCD Type 2 tracking ensures that historical taxi zone changes are preserved, enabling accurate time-based reporting and reliable historical analytics.
+
+## 💡 Key Improvements & Highlights
+
+### 🔄 Fully Automated & Idempotent Architecture
+
+- Eliminates repetitive manual pipeline execution.
+- Dynamically calculates the two-month processing lag.
+- Checks for already-processed partitions.
+- Safely skips duplicate processing.
+- Uses an append-only Delta Lake strategy.
+- Supports reliable incremental processing.
+
+### 🕒 SCD Type 2 Dimension Modeling
+
+- Implements historical tracking for taxi zones.
+- Preserves changes in zone names and borough mappings.
+- Maintains `effective_date` and `end_date`.
+- Supports accurate historical reporting.
+- Prevents dimension changes from corrupting historical analytics.
+
+### ⚡ Optimized Performance & External Sharing
+
+- Partitions data by vendor and month.
+- Reduces unnecessary data scanning.
+- Improves query performance for analytical workloads.
+- Helps optimize storage and compute costs.
+- Automates JSON exports to ADLS Gen2.
+- Enables secure collaboration with external stakeholders.
+
+### 🔐 Enterprise Data Governance
+
+- Centralized governance using Unity Catalog.
+- Managed access controls and permissions.
+- Data lineage and auditing capabilities.
+- Secure external location management.
+- Improved data discoverability and trust.
+
 ## 🏗️ Architecture
 
 <p align="center">
@@ -182,96 +273,6 @@ The pipeline exports the `yellow_trips_enriched` dataset as partitioned JSON fil
 
 `nyctaxi_yellow_export/`
 
-## 🎯 The Problem Solved & Business Impact
-
-### 1. The Business Problem
-
-#### Massive, Unstructured, and Delayed Data Inflow
-
-Raw NYC Yellow Taxi trip files continuously arrive in storage. Managing schema drift, vendor reporting delays, and inconsistent raw data manually creates significant data bottlenecks.
-
-The strict two-month reporting lag makes timely data availability and processing more challenging.
-
-#### Siloed and Inaccurate Historical Context
-
-Taxi zone changes, including borough and location mapping modifications, can break historical reporting when legacy databases fail to preserve previous dimension values.
-
-Without historical tracking, previously reported metrics may become inaccurate when location attributes change.
-
-#### Lack of Ready-to-Use Analytics
-
-Downstream executive teams and BI dashboards require clean, aggregated, and reliable datasets.
-
-Unoptimized raw data can lead to slow query performance, increased compute costs, and a lack of consistent business metrics.
-
-### 2. How the Pipeline Helps Business Decisions & Forecasting
-
-#### 📈 Dynamic Demand & Revenue Optimization
-
-Automated processing of daily trip summaries in the Gold Layer enables business stakeholders to visualize:
-
-- Peak travel hours.
-- High-demand pickup and dropoff zones.
-- Revenue trends across different locations.
-- Passenger volume trends.
-- Average fare and trip distance patterns.
-
-These insights support data-driven decisions regarding fleet allocation, operational efficiency, and revenue optimization.
-
-#### 🔮 Reliable Trend Forecasting
-
-Clean, partitioned, and historically consistent datasets provide a reliable foundation for data science teams to develop predictive models.
-
-Potential forecasting applications include:
-
-- Passenger demand spike prediction.
-- Demand forecasting by taxi zone and time of day.
-- Dynamic pricing and surcharge analysis.
-- Fleet deployment optimization.
-- Revenue forecasting.
-- Seasonal travel trend analysis.
-
-#### 🛡️ Complete Data Governance & Trust
-
-Unity Catalog provides centralized governance, access control, auditing, and data lineage.
-
-SCD Type 2 tracking ensures that historical taxi zone changes are preserved, enabling accurate time-based reporting and reliable historical analytics.
-
-## 💡 Key Improvements & Highlights
-
-### 🔄 Fully Automated & Idempotent Architecture
-
-- Eliminates repetitive manual pipeline execution.
-- Dynamically calculates the two-month processing lag.
-- Checks for already-processed partitions.
-- Safely skips duplicate processing.
-- Uses an append-only Delta Lake strategy.
-- Supports reliable incremental processing.
-
-### 🕒 SCD Type 2 Dimension Modeling
-
-- Implements historical tracking for taxi zones.
-- Preserves changes in zone names and borough mappings.
-- Maintains `effective_date` and `end_date`.
-- Supports accurate historical reporting.
-- Prevents dimension changes from corrupting historical analytics.
-
-### ⚡ Optimized Performance & External Sharing
-
-- Partitions data by vendor and month.
-- Reduces unnecessary data scanning.
-- Improves query performance for analytical workloads.
-- Helps optimize storage and compute costs.
-- Automates JSON exports to ADLS Gen2.
-- Enables secure collaboration with external stakeholders.
-
-### 🔐 Enterprise Data Governance
-
-- Centralized governance using Unity Catalog.
-- Managed access controls and permissions.
-- Data lineage and auditing capabilities.
-- Secure external location management.
-- Improved data discoverability and trust.
 
 ## 🧪 Technologies Used
 
