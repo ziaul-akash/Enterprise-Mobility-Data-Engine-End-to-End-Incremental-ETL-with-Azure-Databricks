@@ -351,7 +351,7 @@ The solution provides reliable, analytics-ready data for business intelligence, 
 
 <div align="center">
 
-### 🚕 NYC Mobility Intelligence
+### 🚕 Enterprise Mobility Data Engine
 **Building reliable, scalable, and analytics-ready data pipelines with Azure Databricks.**
 
 </div>
