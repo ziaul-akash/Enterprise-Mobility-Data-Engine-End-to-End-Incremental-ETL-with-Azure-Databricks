@@ -267,7 +267,7 @@ Azure Databricks Jobs orchestrate the entire pipeline through a sequence of depe
   <img src="https://raw.githubusercontent.com/ziaul-akash/nyctaxi_project/refs/heads/main/solution_architecture/nyc_taxi_automated_pipeline.png"
        alt="NYC Taxi Medallion Architecture"
        width="800"/>
-<p>Automated Pipeline</p>
+<p align="center">Automated Pipeline</p>
 </p>
 
 ## 📤 Data Export & External Sharing
