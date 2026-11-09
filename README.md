@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🚕 NYC Taxi Data Engineering Project (Azure Databricks)</h1>
+  <h1>🚕 NYC Mobility Intelligence - End-to-End Incremental Lakehouse Pipeline with Azure Databricks & Unity Catalog </h1>
 </div>
 
 <hr/>
