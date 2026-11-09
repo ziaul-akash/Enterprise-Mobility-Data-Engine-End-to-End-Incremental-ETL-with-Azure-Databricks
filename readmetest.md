@@ -1,6 +1,6 @@
  <div align="center">
 
-# 🚕 NYC Mobility Intelligence
+# 🚕 Enterprise Mobility Data Engine
 ### End-to-End Incremental Lakehouse Pipeline with Azure Databricks & Unity Catalog
 
 <p>
