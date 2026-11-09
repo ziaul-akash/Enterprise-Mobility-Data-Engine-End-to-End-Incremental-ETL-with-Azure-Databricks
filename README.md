@@ -151,6 +151,8 @@ SCD Type 2 tracking ensures that historical taxi zone changes are preserved, ena
 **Table:**
 - `yellow_trips_raw`
 
+
+
 #### ⚪ Silver Layer — `nyctaxi.02_silver`
 
 **Purpose:** Data cleansing, validation, enrichment, and dimensional modeling.
@@ -179,6 +181,12 @@ SCD Type 2 tracking ensures that historical taxi zone changes are preserved, ena
 - Uses `effective_date` and `end_date` to preserve historical records.
 - Ensures accurate historical reporting when zone attributes change.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ziaul-akash/nyctaxi_project/refs/heads/main/solution_architecture/Part_2_databricks_job.png"
+       alt="NYC Taxi Medallion Architecture"
+       width="800"/>
+</p>
+
 #### 🟡 Gold Layer — `nyctaxi.03_gold`
 
 **Purpose:** Business-level aggregations and analytics-ready datasets.
@@ -194,6 +202,12 @@ Provides aggregated metrics such as:
 - Minimum fare
 - Maximum fare
 - Total revenue
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ziaul-akash/nyctaxi_project/refs/heads/main/solution_architecture/part_4.png"
+       alt="NYC Taxi Medallion Architecture"
+       width="800"/>
+</p>
 
 These metrics support BI dashboards, business reporting, demand analysis, and forecasting.
 
