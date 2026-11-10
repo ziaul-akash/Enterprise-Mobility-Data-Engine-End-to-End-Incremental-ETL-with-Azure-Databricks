@@ -128,15 +128,21 @@ SCD Type 2 tracking ensures that historical taxi zone changes are preserved, ena
 - Secure external location management.
 - Improved data discoverability and trust.
 
-## 🏗️ Architecture
+## 🏗️ Solution Architecture
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ziaul-akash/nyctaxi_project/refs/heads/main/solution_architecture/Enterprise-Mobility-Data-Engine_solution_architecture.png"
+       alt="NYC Taxi Medallion Architecture"
+       width="800"/>
+</p>
+
+### Medallion Architecture Layers
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/ziaul-akash/nyctaxi_project/refs/heads/main/solution_architecture/part_1_medallion_architecture.png"
        alt="NYC Taxi Medallion Architecture"
        width="800"/>
 </p>
-
-### Medallion Architecture Layers
 
 #### 🟤 Bronze Layer — `nyctaxi.01_bronze`
 
