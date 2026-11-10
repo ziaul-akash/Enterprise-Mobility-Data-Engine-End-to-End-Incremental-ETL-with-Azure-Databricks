@@ -131,7 +131,7 @@ SCD Type 2 tracking ensures that historical taxi zone changes are preserved, ena
 ## 🏗️ Solution Architecture
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ziaul-akash/nyctaxi_project/refs/heads/main/solution_architecture/Enterprise-Mobility-Data-Engine_solution_architecture.png"
+  <img src="https://raw.githubusercontent.com/ziaul-akash/nyctaxi_project/refs/heads/main/solution_architecture/Enterprise-Mobility-Data-Engine_solution_architecture.jpg"
        alt="NYC Taxi Medallion Architecture"
        width="800"/>
 </p>
