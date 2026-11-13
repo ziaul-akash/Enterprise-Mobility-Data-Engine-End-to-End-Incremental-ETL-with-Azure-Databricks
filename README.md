@@ -419,6 +419,10 @@ It supports the organisation and management of data assets across the Lakehouse.
 
 Databricks Workflows and Jobs manage the execution of ingestion and transformation tasks.
 
+<p align="center">
+  <img src="solution_architecture/nyc_taxi_automated_pipeline.png" alt="nyc_taxi_automated_pipeline.png" width="100%">
+</p>
+
 The workflow coordinates the processing sequence and ensures that downstream tasks execute after their dependencies are completed.
 
 ### Pipeline Execution Sequence
@@ -632,7 +636,7 @@ These controls help maintain consistent processing across recurring monthly exec
 ---
 
 
-## 💼 17. Business Applications
+## 💼 14. Business Applications
 
 This project demonstrates how cloud-based data engineering can transform raw mobility records into information that supports business decisions.
 
@@ -653,7 +657,7 @@ By combining historical trip records with additional data sources such as weathe
 
 ---
 
-## 🔮 18. Future Enhancements
+## 🔮 17. Future Enhancements
 
 Potential extensions to the platform include:
 
@@ -667,7 +671,7 @@ Potential extensions to the platform include:
 
 ---
 
-## 🧰 19. Technology Stack
+## 🧰 15. Technology Stack
 
 | Category | Technologies |
 |---|---|
@@ -686,7 +690,7 @@ Potential extensions to the platform include:
 
 ---
 
-## 📚 20. Data Source and References
+## 📚 16. Data Source and References
 
 **Primary Data Source**
 
