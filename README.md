@@ -298,6 +298,18 @@ This helps ensure that already processed monthly datasets are not unnecessarily 
 
 Azure Databricks and PySpark are used to process large volumes of trip data through distributed Spark transformations.
 
+<p align="center">
+  <img src="solution_architecture/part_1_medallion_architecture.png" alt="Medallion Architecture" width="100%">
+</p>
+<p align="center">
+  <img src="solution_architecture/Part_2_databricks_job.png" alt="Databricks tasks" width="100%">
+</p>
+
+<p align="center">
+  <img src="solution_architecture/part_4.png" alt="Databricks tasks" width="100%">
+</p>
+
+
 ### 7.1 Bronze Layer
 
 The Bronze layer preserves the ingested source data.
