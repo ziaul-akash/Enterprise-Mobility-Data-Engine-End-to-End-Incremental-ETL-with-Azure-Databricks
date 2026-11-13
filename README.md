@@ -187,6 +187,12 @@ The pipeline is designed to identify the relevant historical month instead of as
 
 The platform follows a cloud-based Lakehouse architecture using Azure Data Lake Storage Gen2, Azure Databricks, Delta Lake and Unity Catalog.
 
+<h3>Architecture Diagram</h3>
+
+<p align="center">
+  <img src="solution_architecture/enterprise-mobility-data-engine_solution_architecture.jpg" alt="Enterprise Mobility Data Engine Architecture" width="100%">
+</p>
+
 ### End-to-End Architecture
 
 ```mermaid
