@@ -36,8 +36,8 @@ The ultimate goal is to provide a reliable historical data foundation for analys
 11. [Analytics and Business Intelligence](#-11-analytics-and-business-intelligence)
 12. [Performance Optimisation](#-12-performance-optimisation)
 13. [Data Quality and Reliability](#-13-data-quality-and-reliability)
-14. [Future Enhancements](#14-future-enhancements)
-15. [Business Applications](#15-business-applications)
+14. [Business Applications](#14-business-applications)
+15. [Future Enhancements](#15-future-enhancements)
 16. [Technology Stack](#-16-technology-stack)
 17. [Data Source and References](#-17-data-source-and-references)
 
