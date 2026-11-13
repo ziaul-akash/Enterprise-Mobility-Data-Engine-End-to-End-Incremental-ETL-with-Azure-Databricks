@@ -637,7 +637,7 @@ These controls help maintain consistent processing across recurring monthly exec
 ---
 
 
-## 💼 14. Business Applications
+##  14. Business Applications
 
 This project demonstrates how cloud-based data engineering can transform raw mobility records into information that supports business decisions.
 
@@ -658,7 +658,7 @@ By combining historical trip records with additional data sources such as weathe
 
 ---
 
-## 🔮 15. Future Enhancements
+##  15. Future Enhancements
 
 Potential extensions to the platform include:
 
