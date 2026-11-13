@@ -183,7 +183,7 @@ The pipeline is designed to identify the relevant historical month instead of as
 
 ---
 
-## 🏗️ 5. Solution Architecture
+##  5. Solution Architecture
 
 The platform follows a cloud-based Lakehouse architecture using Azure Data Lake Storage Gen2, Azure Databricks, Delta Lake and Unity Catalog.
 
