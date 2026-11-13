@@ -262,31 +262,8 @@ The ingestion workflow:
 5. Store the raw file in the ADLS Gen2 landing area.
 6. Update the ingestion processing status.
 
-### 6.3 Landing Zone Structure
 
-Example storage organisation:
-
-```text
-ADLS_Gen2/
-│
-└── landing/
-    │
-    └── yellow_taxi/
-        │
-        ├── year=2026/
-        │   ├── month=07/
-        │   │   └── yellow_tripdata_2026-07.parquet
-        │   │
-        │   ├── month=08/
-        │   │   └── yellow_tripdata_2026-08.parquet
-        │   │
-        │   └── month=09/
-        │       └── yellow_tripdata_2026-09.parquet
-```
-
-This organisation makes historical datasets easier to identify, maintain and process.
-
-### 6.4 Idempotent Processing
+### 6.3 Idempotent Processing
 
 Ingestion processing flags and dataset tracking are used to manage recurring execution cycles.
 
