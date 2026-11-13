@@ -77,7 +77,7 @@ The resulting Gold datasets enable business users to explore geographical demand
 | Storage format | Delta Lake |
 | Orchestration | Databricks Workflows |
 | Governance | Unity Catalog |
-| Optimisation | Partitioning, Z-Ordering and Liquid Clustering |
+| Optimisation | Partitioning|
 
 ---
 
@@ -562,7 +562,7 @@ The platform incorporates Delta Lake optimisation techniques to improve data org
 
 ### Delta Partitioning
 
-Partitioning organises data based on selected attributes, such as trip date or year and month.
+Partitioning organises data based on selected attributes, such as vendor and month.
 
 Benefits:
 
@@ -676,7 +676,7 @@ Potential extensions to the platform include:
 | Data Modelling | Fact and Dimension Modelling, SCD Type 2 |
 | Orchestration | Databricks Workflows and Jobs |
 | Governance | Unity Catalog |
-| Performance | Partitioning, Z-Ordering, Liquid Clustering |
+| Performance | Partitioning |
 | Security | Azure Managed Identity, RBAC |
 
 ---
