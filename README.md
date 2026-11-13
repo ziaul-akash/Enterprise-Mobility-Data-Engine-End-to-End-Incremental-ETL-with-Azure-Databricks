@@ -278,9 +278,14 @@ Azure Databricks and PySpark are used to process large volumes of trip data thro
 <p align="center">
   <img src="solution_architecture/part_1_medallion_architecture.png" alt="Medallion Architecture" width="100%">
 </p>
+
+<hr/>
+
 <p align="center">
   <img src="solution_architecture/Part_2_databricks_job.png" alt="Databricks tasks" width="100%">
 </p>
+
+<hr/>
 
 <p align="center">
   <img src="solution_architecture/part_4.png" alt="Databricks tasks" width="100%">
