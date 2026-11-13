@@ -27,7 +27,7 @@ The ultimate goal is to provide a reliable historical data foundation for analys
 2. [Business Problem](#-2-business-problem)
 3. [Project Objectives](#-3-project-objectives)
 4. [Dataset Overview](#-4-dataset-overview)
-5. [Solution Architecture](#-5-solution-architecture)
+5. [Solution Architecture](#5-solution-architecture)
 6. [Data Ingestion](#-6-data-ingestion)
 7. [Data Transformation and Processing](#-7-data-transformation-and-processing)
 8. [Storage and Data Modelling](#-8-storage-and-data-modelling)
