@@ -3,7 +3,7 @@
 # 🚕 Enterprise Mobility Data Engine
 ### End-to-End Incremental Data Engineering Pipeline with Azure Databricks & Unity Catalog
 
-An end-to-end incremental data engineering platform built with Azure Databricks, PySpark, Delta Lake and Azure Data Lake Storage Gen2 (ADLS Gen2) to automate the ingestion, transformation and analysis of large-scale NYC taxi trip records.
+A data engineering platform built with Azure Databricks, PySpark, Delta Lake and Azure Data Lake Storage Gen2 (ADLS Gen2) to automate the ingestion, transformation and analysis of large-scale NYC taxi trip records.
 
 The platform processes approximately 3.8–5 million records per monthly dataset, implementing incremental ingestion, SCD Type 2 historical tracking and a Bronze-Silver-Gold Medallion Architecture to transform raw mobility data into actionable business intelligence.
 
