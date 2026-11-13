@@ -77,7 +77,7 @@ The resulting Gold datasets enable business users to explore geographical demand
 | Storage format | Delta Lake |
 | Orchestration | Databricks Workflows |
 | Governance | Unity Catalog |
-| Optimisation | Partitioning|
+| Optimisation | Partitioning, Z-Ordering, Liquid Clustering |
 
 ---
 
@@ -681,7 +681,7 @@ Potential extensions to the platform include:
 | Data Modelling | Fact and Dimension Modelling, SCD Type 2 |
 | Orchestration | Databricks Workflows and Jobs |
 | Governance | Unity Catalog |
-| Performance | Partitioning |
+| Performance | Partitioning, Z-Ordering, Liquid Clustering |
 | Security | Azure Managed Identity, RBAC |
 
 ---
